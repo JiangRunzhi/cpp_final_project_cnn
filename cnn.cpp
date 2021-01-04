@@ -41,20 +41,12 @@ float fc0_weight[2 * 2048] = { 0.029426228f, 0.055579487f, 0.05933608f, -0.02196
 float fc0_bias[2] = { -0.0040076836f, 0.00010113005 };
 
 conv_param conv_params[3] = {
-{
-1, 2, 3, 3, 16, conv0_weight, conv0_bias
-},
-{
-0, 1, 3, 16, 32, conv1_weight, conv1_bias
-},
-{
-1, 2, 3, 32, 32, conv2_weight, conv2_bias
-}
+	{1, 2, 3, 3, 16, conv0_weight, conv0_bias},
+	{0, 1, 3, 16, 32, conv1_weight, conv1_bias},
+	{1, 2, 3, 32, 32, conv2_weight, conv2_bias}
 };
 fc_param fc_params[1] = {
-{
-2048, 2, fc0_weight, fc0_bias
-}
+	{2048, 2, fc0_weight, fc0_bias}
 };
 
 
